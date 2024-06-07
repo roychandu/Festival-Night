@@ -1,0 +1,902 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    padding: 10px;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    /* border: solid; */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.myVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.home-row1{
+    width: 100%;
+    height: 8%;
+    /* border: solid; */
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10vw;
+}
+.home-row2{
+    width: 100%;
+    height: 12%;
+    /* border: solid; */
+    display: flex;
+    /* background-color: black; */
+    z-index: 1;
+}
+.home-row2 i{
+    display: none;
+}
+.navbar-left{
+    width: 40%;
+    height: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-left a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5vw;
+}
+.navbar-right{
+    width: 80%;
+    height: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    gap: 5vw;
+    justify-content: end;
+    padding-right: 5vw;
+    align-items: center;
+}
+.navbar-right a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar-right h4{
+    font-size: 1vw;
+    padding: 0.8vw 1.5vw;
+    /* border: solid; */
+    border-radius: 50px;
+    background-color: rgba(255, 68, 0, 0.84);
+    color: #fff;
+}
+
+.home-row3{
+    width: 50%;
+    height: 50%;
+    /* background-color: crimson; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.home-row3 h1{
+    /* border: solid; */
+    font-size: 4.2vw;
+}
+.home-row3 h5{
+    border: none;
+    margin-top: 3vw;
+    padding: 1vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    background-color: rgba(255, 68, 0, 0.84);
+}
+.home-row4{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home-row4 .box{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.home-row4 .box i{
+    /* border: solid; */
+    font-size: 2vw;
+}
+.home-row4 .box h1, h2{
+    font-size: 1.5vw;
+}
+.home-row-col3-child2{
+    display: flex;
+    /* border: solid; */
+    gap: 1vw;
+}
+.home-row4 .home-row4-col3 i{
+    border: none;
+    padding: 0.6vw;
+    border-radius: 50%;
+    background-color: rgba(255, 68, 0, 0.84);
+    transition: all ease 2s;
+    font-size: 1;
+}
+.home-row4 .home-row4-col3 i:hover{
+    background-color: rgba(255, 255, 0, 0.766);
+    color: royalblue;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotation {
+    form {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* Home Section CSS End  */
+
+/* About Section CSS Start */
+.About{
+    width: 100%;
+    height: calc(100% - 100vh);
+    background-image: url(Images/edward-unsplash-blur.jpg);
+    object-fit: cover;
+}
+.About-row{
+    width: 100%;
+    height: 100vh;
+    padding: 6vw;
+    display: flex;
+    gap: 2vw;
+}
+.About-box{
+    width: 50%;
+    height: 90%;
+    /* border: solid; */
+}
+.About-row-left h1{
+    /* border: solid; */
+    padding: 20px 0 0 20px;
+    font-size: 2.5vw;
+    color: #fff;
+}
+.About-row-left h3{
+    /* border: solid; */
+    padding: 20px 0 0 20px;
+    font-size: 1.5vw;
+    color: #fff;
+}
+.About-row-left p{
+    /* border: solid violet; */
+    padding: 0 20px;
+    line-height: 2;
+    font-size: 1.1vw;
+    color: #ffffffe0;
+}
+.About-row-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.subchild-about-right{
+    width: 90%;
+    height: 30%;
+    /* border: solid; */
+    backdrop-filter: blur(5px);
+    background-color: #ffffff6c;
+    position: relative;
+    top: -40%;
+    left: 5%;
+    border-radius: 20px;
+    display: flex;
+    padding: 2.2vw;
+    gap: 2vw;
+    align-items: center;
+}
+.subchild-about-clo1{
+    width: 5vw;
+    height: 11vh;
+    display: flex;
+    /* border: solid; */
+    /* padding: 2vw; */
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 0, 0.578);
+}
+.subchild-about-clo2{
+    /* border: solid; */
+    line-height: 1.6;
+}
+.subchild-about-clo2 p{
+    font-size: 1.4vw;
+    color: rgba(0, 0, 0, 0.488);
+    font-weight: 300;
+}
+.subchild-about-clo2 h1{
+    font-size: 2vw;
+}
+/* About Section CSS End  */
+
+/* Artists Section CSS Start  */
+.Artists{
+    width: 100%;
+    height: calc(100% - 100vh);
+}
+.Artists-row{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    padding: 8vw 12vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.Artists-col1{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: solid; */
+}
+.Artists-col1 h1{
+    font-size: 3vw;
+}
+.Artists-col2{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    gap: 2vw;
+}
+.Subcol-Artists1{
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(Images/Artist01.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+.Subcol-Artists2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: solid; */
+    gap: 3vw;
+}
+.Subcol-Artists2-child1{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    background-image: url(Images/Artist02.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+.Subcol-Artists2-child2{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: -20px;
+    border-radius: 20px;
+    background-image: url(Images/Artist03.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+.Subcol-Artists1 .ho-box{
+    height: 40%;
+    position: relative;
+    top: 40%;
+}
+.ho-box{
+    width: 90%;
+    height: 80%;
+    /* border: solid; */
+    transition: all ease 0.5s;
+    position: relative;
+    top: 80%;
+    border-radius: 20px;
+}
+.ho-box-row1{
+    /* border: solid; */
+    display: flex;
+    height: 20%;
+    align-items: center;
+    padding-left: 20px;
+    gap: 31%;
+    color: #fff;
+    text-decoration: transparent;
+}
+.ho-box-row1 h2:nth-child(1){
+    font-size: 1.3vw;
+}
+.ho-box-row1 h2:nth-child(2){
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.488);
+    font-size: 1.3vw;
+}
+.ho-box-row2{
+    /* border: solid; */
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    gap: 24%;
+    color: #fff;
+}
+.ho-box-row2 h2:nth-child(1){
+    font-size: 1.3vw;
+}
+.ho-box-row2 h2:nth-child(2){
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.488);
+    font-size: 1.3vw;
+}
+.ho-box-row3{
+    /* border: solid; */
+    padding-left: 20px;
+    height: 20%;
+    align-items: center;
+    display: flex;
+    gap: 32%;
+    color: #fff;
+}
+.ho-box-row3 h2:nth-child(1){
+    font-size: 1.3vw;
+}
+.ho-box-row3 h2:nth-child(2){
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.488);
+    font-size: 1.3vw;
+}
+.ho-box-row4{
+    border-top: solid 1px rgba(0, 0, 0, 0.488);
+    /* border: solid; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 20%;
+    align-items: center;
+    display: flex;
+    gap: 10%;
+    color: #fff;
+}
+.ho-box-row4 h2:nth-child(1){
+    font-size: 1.3vw;
+}
+.ho-box-row4 h2:nth-child(2){
+    font-weight: 300;
+    color: crimson;
+    font-size: 1.3vw;
+}
+
+.Subcol-Artists1:hover{
+    .ho-box{
+        backdrop-filter: blur(2px);
+        background-color: rgba(65, 105, 225, 0.83);
+        position: relative;
+        top: -20px;
+    }
+}
+.Subcol-Artists2-child1:hover{
+    .ho-box{
+        backdrop-filter: blur(2px);
+        background-color: rgba(65, 105, 225, 0.83);
+        position: relative;
+        top: -20px;
+    }
+}
+.Subcol-Artists2-child2:hover{
+    .ho-box{
+        backdrop-filter: blur(2px);
+        background-color: rgba(65, 105, 225, 0.83);
+        position: relative;
+        top: -20px;
+    }
+}
+/* Artists Section CSS End  */
+
+
+/* Schedule Section CSS Start  */
+.Schedule{
+    width: 100%;
+    height: calc(100% - 150vh);
+}
+.Schedule-row{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    padding: 12vw 7vw 7vw 7vw;
+    flex-wrap: wrap;
+    background-image: url(Images/nainoa-shizuru-unsplash-blur.jpg);
+    background-size: cover;
+}
+.Schedule-col1{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.Schedule-col1 h1{
+    font-size: 3vw;
+}
+.Schedule-col2{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 5px black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.Schedule-col2-row1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+.Schedule-col2-row2, .Schedule-col2-row3, .Schedule-col2-row4{
+    width: 100%;
+    height: 28.33%;
+    display: flex;
+    border-top: solid 1px black;
+}
+.subcol-Schedule-col2-col1{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-right: solid 1px black;
+    background-color: rgb(22, 22, 37);
+}
+.Schedule-col2-row2 .subcol-Schedule-col2-col1 h3{
+    align-self: start;
+    padding-top: 15%;
+}
+.Schedule-col2-row3 .subcol-Schedule-col2-col1 h3{
+    align-self: start;
+    padding-top: 15%;
+}
+.Schedule-col2-row4 .subcol-Schedule-col2-col1 h3{
+    align-self: start;
+    padding-top: 15%;
+}
+.Schedule-col2-row3 .subcol-Schedule-col2-col3{
+    background-color: rgb(22, 22, 37);
+}
+.Schedule-col2-row3 .subcol-Schedule-col2-col2{
+    background-color: #dcdcdc;
+}
+.Schedule-col2-row3 .subcol-Schedule-col2-col4{
+    background-color: #dcdcdc;
+}
+.Schedule-col2-row3 .subcol-Schedule-col2-col3 h3{
+    font-weight: 300;
+}
+.subcol-Schedule-col2-col2{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-right: solid 1px black;
+    flex-direction: column;
+    line-height: 1.5;
+}
+.subcol-Schedule-col2-col2 h3{
+    font-weight: 300;
+}
+.Schedule-col2-row2 .subcol-Schedule-col2-col2{
+    background-image: url(Images/Artist01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.subcol-Schedule-col2-col3{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-right: solid 1px black;
+    flex-direction: column;
+    line-height: 1.5;
+}
+.Schedule-col2-row2 .subcol-Schedule-col2-col3{
+    background-color: #dcdcdc;
+}
+.subcol-Schedule-col2-col4{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-right: solid 1px black;
+    flex-direction: column;
+    line-height: 1.5;
+}
+.subcol-Schedule-col2-col4 h3{
+    font-weight: 300;
+}
+.Schedule-col2-row2 .subcol-Schedule-col2-col4{
+    background-image: url(Images/Artist02.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Schedule-col2-row4 .subcol-Schedule-col2-col4{
+    background-color: rgb(22, 22, 37);
+}
+.Schedule-col2-row4 .subcol-Schedule-col2-col2{
+    background-image: url(Images/Artist03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Schedule-col2-row4 .subcol-Schedule-col2-col3{
+    background-color: #dcdcdc;
+}
+.Schedule-col2-row1 :nth-child(n){
+    background-color: #FA4301;
+}
+.Schedule-col2-row1 :nth-child(1){
+    border-top-left-radius: 20px;
+}
+.Schedule-col2-row1 :nth-child(4){
+    border-top-right-radius: 20px;
+}
+.Schedule-col2-row4 :nth-child(1){
+    border-bottom-left-radius: 20px;
+}
+.Schedule-col2-row4 :nth-child(4){
+    border-bottom-right-radius: 20px;
+}
+/* Schedule Section CSS End  */
+
+/* Pricing Section CSS Start  */
+.Pricing{
+    width: 100%;
+    height: calc(100% - 150vh);
+}
+.Pricing-row{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.137);
+}
+.Pricing-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8vw;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+}
+.Pricing-col1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    /* border: solid; */
+}
+.Pricing-col1 h1{
+    font-size: 3vw;
+}
+.Pricing-col2{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    gap: 2vw;
+    /* border: solid; */
+}
+.Pricing-col2-subcol1{
+    width: 50%;
+    border: dotted 5px;
+    border-radius: 20px;
+}
+.Pricing-col2-subcol1-box1{
+    height: 33.33%;
+    display: flex;
+    justify-content: space-around;
+}
+.Pricing-col2-subcol1 .Pricing-col2-subcol1-box1 .Pricing-col2-subcol1-box1-row1{
+    width: 50%;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Pricing-col2-subcol1 .Pricing-col2-subcol1-box1 .Pricing-col2-subcol1-box1-row1 span{
+    font-size: 2vw;
+}
+.Pricing-col2-subcol1 .Pricing-col2-subcol1-box1 .Pricing-col2-subcol1-box1-row2{
+    width: 19%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FA4301;
+    color: #fff;
+    position: relative;
+    top: 1vw;
+}
+
+.Pricing-col2-subcol1-box2{
+    height: 33.33%;
+    display: flex;
+}
+.Pricing-col2-subcol1 .Pricing-col2-subcol1-box2 .Pricing-col2-subcol1-box2-row1{
+    width: 50%;
+    height: 100%;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+.Pricing-col2-subcol1 .Pricing-col2-subcol1-box2 .Pricing-col2-subcol1-box2-row2{
+    width: 50%;
+    height: 100%;
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+
+.Pricing-col2-subcol2 .Pricing-col2-subcol1-box1{
+    justify-content: start;
+    padding-left: 3vw;
+}
+.Pricing-col2-subcol2{
+    width: 50%;
+    height: 110%;
+    border: dotted 5px;
+    border-radius: 20px;
+}
+
+.Pricing-col2-subcol2 .Pricing-col2-subcol1-box1 .Pricing-col2-subcol1-box1-row1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.5;
+}
+.Pricing-col2-subcol2 .Pricing-col2-subcol1-box1 .Pricing-col2-subcol1-box1-row1 span{
+    font-size: 2vw;
+}
+.Pricing-col2-subcol2 .Pricing-col2-subcol1-box2 .Pricing-col2-subcol1-box2-row1{
+    width: 50%;
+    height: 100%;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;}
+.Pricing-col2-subcol2 .Pricing-col2-subcol1-box2 .Pricing-col2-subcol1-box2-row2{
+    width: 50%;
+    height: 100%;
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.Pricing-col2-subcol1-box3{
+    height: 33.33%;
+}
+/* Pricing Section CSS End  */
+
+
+@media (max-width : 1200px) {
+    .main{
+        padding: 0;
+    }
+    /* Home Section Responsive Start  */
+    .navbar-left a{
+        /* border: solid; */
+        margin-left: 3vw;
+        font-size: 6.5vw;
+    }
+    .navbar-right{
+        display: none;
+    }
+    .home-row2 i{
+        display: flex;
+        position: relative;
+        left: 40%;
+        font-size: 7vw;
+        color: #fff;
+        align-items: center;
+    }
+    .home-row3{
+        width: 90vw;
+        /* background-color: crimson; */
+    }
+    .home-row3 h4{
+        font-size: 4vw;
+    }
+    .home-row3 h1{
+        font-size: 10vw;
+    }
+    .home-row3 h5{
+        padding: 4vw;
+        font-size: 4vw;
+    }
+    .home-row4 .box{
+        /* background-color: royalblue; */
+        gap: 2vw;
+    }
+    .home-row4 .box h1{
+        /* background-color: crimson; */
+        font-size: 3vw;
+    }
+    .home-row4 .home-row4-col3{
+        /* background-color: crimson; */
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .home-row4-col3 h2{
+        font-size: 4vw;
+    }
+    .home-row4 .box i{
+        /* background-color: crimson; */
+        font-size: 4vw;
+    }
+    .home-row-col3-child2{
+        width: 100%;
+        height: 80%;
+        /* border: solid; */
+        display: flex;
+        justify-content: space-between;
+        gap: 1vw;
+    }
+    .home-row4 .home-row4-col3 .home-row-col3-child2 i{
+        /* border: solid; */
+        font-size: 6vw;
+        padding: 2vw;
+    }
+    /* Home Section Responsive End*/
+
+
+
+    /* About Section Responsive */
+    .About-row{
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        height: 100vh;
+    }
+    .About-box{
+        width: 100%;
+        height: 50%;
+    }
+    .About-row-left h1{
+        font-size: 6vw;
+    }
+    .About-row-left h3{
+        font-size: 4vw;
+    }
+    .About-row-left p{
+        font-size: 3vw;
+    }
+    .subchild-about-clo1{
+        width: 12vw;
+        height: 7vh;
+        /* border: solid; */
+        font-size: 5vw;
+    }
+    .subchild-about-clo2 p{
+        font-size: 3vw;
+    }
+    .subchild-about-clo2 h1{
+        font-size: 4vw;
+    }
+    /* About Section Responsive End  */
+
+    /* Artists Section Start  */
+    .Artists-row{
+        height: 250vh;
+        padding: 8vw 2vw;
+    }
+    .Artists-col1{
+        height: 5%;
+    }
+    .Artists-col1 h1{
+        font-size: 10vw;
+    }
+    .Artists-col2{
+        height: 95%;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .Subcol-Artists1{
+        width: 100%;
+        height: 60%;
+    }
+    .Subcol-Artists2{
+        width: 100%;
+        height: 50%;
+    }
+    .Subcol-Artists2-child2{
+        top: 10px;
+        /* border: solid; */
+    }
+    /* Artists Section Responsive End  */
+
+    /* Schedule Section Responsive Start  */
+    
+
+
+    /* Pricing Section Responsive Start  */
+    .Pricing-row{
+        padding: 2vw 2vw 10vw;
+    }
+    .Pricing-col1{
+        height: 10%;
+        align-items: center;
+    }
+    .Pricing-col1 h1{
+        font-size: 10vw;
+    }
+    .Pricing-col2{
+        flex-wrap: wrap;
+        gap: 5vw;
+    }
+    .Pricing-col2-subcol1{
+        width: 100%;
+        height: 45%;
+    }
+    .Pricing-col2-subcol2{
+        width: 100%;
+        height: 55%;
+    }
+}
